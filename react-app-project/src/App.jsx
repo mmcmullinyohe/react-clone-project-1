@@ -1,26 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
 
 const Card = ({ title }) => {
   return (
-    <div className="card"> 
+    <div className="card">
       <h2> {title}</h2>
     </div>
-  )
-}
+  );
+};
 
 const App = () => {
   const [hasLiked, setHasLiked] = useState();
 
   return (
     <div className="card-container">
-    <Card title="Star Wars" />
-    <Card title="Avatar"/>
-    <Card title="The Lion King" />
+      <Card title="Star Wars" />
+      <Card title="Avatar" />
+      <Card title="The Lion King" />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
